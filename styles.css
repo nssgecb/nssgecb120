@@ -1,0 +1,445 @@
+
+* {
+box-sizing: border-box;
+font-family: " Times New Roman, arial, sans-serif";
+font-size: 1em;
+}
+
+html, body{
+margin: 0;
+padding: 0;
+}
+
+#header-block{
+background-size: cover;
+background-image: url(Images/headerbackground.jpg);
+padding: 0;
+}
+
+nav{
+font-size: 1.1em;
+font-weight: lighter;
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav ul{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+list-style-type: none;
+margin: 0;
+padding: 20px 0 20px 0;
+}
+
+nav a{
+color: hsl(120deg 59.27% 84.15%);
+text-decoration: none;
+}
+
+nav a:hover{
+color: hsl(120deg 100% 47.17%);
+}
+
+.main-header{
+width: fit-content;
+margin: auto;
+color: hsl(45.97deg 100% 92.37%);
+font-size: 2em;
+display: flex;
+align-items:  center;
+justify-content: center;
+}
+
+.header-logo{
+width:100px;
+height:100px;
+}
+
+.main-heading{
+font-size: 1.3em;
+text-align: center;
+}
+
+.content-section{
+font-size: 1.5em;
+padding-inline: 3%;
+border:0;
+text-align: justify;
+background-image:linear-gradient(to bottom right, hsl(349.52deg 32.51% 80.63%), hsl(79.74deg 62.48% 50.05% / 62%));
+opacity: 1;
+color:hsl(296.31deg 68.73% 14%);
+}
+
+.content-section p{
+margin: 0;
+padding: 20px;
+}
+
+.warriors-list{
+padding-bottom: 20px;
+display: grid;
+grid-template-columns: repeat(4, 25%);
+margin: 0;
+}
+
+.warriors{
+text-transform: uppercase;
+text-align: center;
+padding: 5%;
+font-size: large;
+transition: 1s;
+}
+
+.warriors-pic{
+width: 100%;
+border-radius: 5%;
+}
+
+.warriors:hover{
+cursor: pointer;
+color: hsl(296, 66%, 34%);
+transform: translate3d(10 10 10);
+opacity: .9;
+}
+
+.warriors:active{
+position: relative;
+z-index: 1;
+width: 125%;
+font-size: larger;
+}
+
+.hyperlink-policy{
+list-style-type: upper-alpha ;
+margin: 0;
+}
+
+.hyperlink-policy h4{
+font-weight: 600;
+margin: 1rem;
+}
+
+.section-header{
+font-size: 1.75em;
+width: fit-content;
+margin: auto;
+padding-top: 20px;
+text-transform: uppercase;
+}
+
+.footer-block{
+font-size:1.2em;
+display: grid;
+grid-template-columns: repeat(4, 25%);
+column-gap: 3.25%;
+margin:0;
+padding: 30px 0 0 30px;
+}
+
+footer{
+position: relative;
+bottom:0px;
+width: 100%;
+background-color: hsl(182.67deg 81.56% 44.15%);
+}
+
+.contacts{
+    width: 108%;
+}
+
+.footer-logo{
+height: 85px;
+width: 85px;
+}
+
+.address{
+text-align: center;
+padding-right: 10px;
+}
+
+.college-address{
+padding: 0;
+text-align: justified;
+}
+
+.contact-logo{
+width:25px;
+height:25px;
+}
+
+.footer-block ul{
+display: flex;
+flex-direction: column;
+padding: 0px;
+list-style-type: none;
+}
+
+.footer-block a{
+color: hsl(0deg 40.43% 36.86%);
+text-decoration: none;
+}
+
+.footer-links ul{
+padding: 0px;
+}
+
+.footer-links a:hover{
+color: hsl(0deg 66.32% 62.57%);
+}
+
+.footer-links div{
+margin:0;
+border-bottom: 1px dashed black;
+}
+
+.hyperlink img{
+padding: 5px;
+border: 0;
+margin-block-end: 0;
+}
+
+.hyperlink-logo{
+width: 60px;
+height: 60px;
+}
+
+.hyperlink-logo:hover{
+opacity:0.75;
+}
+
+.hyperlink{
+    text-align: center;
+}
+
+.social-media{
+text-align: center;
+width: 50%;
+}
+
+.policy{
+margin: 0;
+padding: 0 0 3rem 3rem;
+}
+
+.policy a{
+text-decoration: none;
+}
+
+.policy a:hover{
+text-decoration-line: underline;
+color: rgb(74, 100, 164);
+}
+    
+#footer-block{
+position: relative;
+bottom:0px;
+width: 100%;
+background-color: hsl(182.67deg 81.56% 44.15%);
+}
+
+#footer-block ul{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+margin:auto;
+padding: 10px;
+list-style-type: none;
+}
+
+
+/*MEDIA OPTIMIZATION*/
+
+@media screen and (max-width: 750px){
+
+    .main-header{
+    font-size: 1em;
+    }
+
+    .header-logo{
+    width: 75px;
+    height: 75px;
+    }
+
+    nav{
+    font-size: 0.75em;
+    }
+    
+    nav ul{
+    padding: 10px 0;
+    }
+
+    .content-section{
+    font-size: 0.9em;
+    }
+
+    .content-section p{
+    padding: 12px;
+    }
+
+    .section-header{
+    font-size: 16px;
+    padding-top: 10px;
+    }
+
+    .warriors-list{
+    grid-template-columns: repeat(2, 50%);
+    }
+
+    .warriors{
+    font-size: large;
+    }
+
+    .footer-block{
+    font-size: 0.8em;
+    padding: 20px 0 0 20px;
+    }
+
+    .footer-logo{
+    width: 60px;
+    height: 60px;
+    }
+
+    .hyperlink-logo{
+    width: 40px;
+    height: 40px;
+    }
+
+    .contact-logo{
+    width: 19px;
+    height: 19px;
+    }
+
+    .policy{
+    font-size: 0.7em;
+    padding: 0 0 14px 14px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+
+    .main-header{
+    font-size: 0.6em;
+    }
+
+    .header-logo{
+    width: 40px;
+    height: 40px;
+    }
+    
+    nav{
+    font-size: 0.4em;
+    }
+    
+    nav ul{
+    padding: 8px 0;
+    }
+    
+    .content-section{
+    font-size: 0.5em;
+    }
+
+    .content-section p{
+    padding: 10px;
+    }
+
+    .section-header{
+    font-size: 10px;
+    padding-top: 8px;
+    }
+
+    .warriors-list{
+    grid-template-columns: repeat(1, 100%);
+    }
+
+    .footer-block{
+    font-size: 0.45em;
+    padding: 12px 0 0 12px;
+    }
+
+    .footer-logo{
+    width: 20px;
+    height: 20px;
+    }
+
+    .address{
+    padding-right: 7px;
+    }
+
+    .hyperlink-logo{
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    }
+
+    .contact-logo{
+    width: 10px;
+    height: 10px;
+    }
+
+    .policy{
+    font-size: 0.5em;
+    padding: 0 0 1rem 1rem;
+    }
+
+}
+    
+
+/**
+ * @version    $Id$
+ * @package    JSN_PageBuilder
+ * @author     JoomlaShine Team <support@joomlashine.com>
+ * @copyright  Copyright (C) 2012 JoomlaShine.com. All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Websites: http://www.joomlashine.com
+ * Technical Support:  Feedback - http://www.joomlashine.com/contact-us/get-support.html
+ */
+/* ============================================================
+	SMARTPHONE LAYOUT (240 - 480)
+=============================================================*/
+@media only screen and (max-width: 480px), (max-device-width: 480px) {
+	#fancybox-wrap,
+	#fancybox-content,
+	.progress-info {
+		width: 100%;
+	}
+	.mejs-container.mejs-audio,
+	.local_file {
+		max-width: 100%;
+	}
+	#fancybox-wrap,
+	#fancybox-content {
+		left: 0 !important;
+	}
+	.btn {
+		margin: 5px;
+	}
+	.btn-group .btn {
+		margin: 0;
+	}
+}
+/* ============================================================
+	TABLET LAYOUT (481 - 960)
+=============================================================*/
+@media only screen and (min-width: 481px) and (max-width: 960px), (min-device-width: 481px) and (max-device-width: 960px) {
+	.row {
+		margin: 0;
+	}
+	#fancybox-wrap,
+	#fancybox-content {
+		width: 100% !important;
+		left: 0 !important;
+	}
+	.mejs-container.mejs-audio,
+	.local_file {
+		max-width: 100%;
+	}
+	.btn {
+		margin: 5px;
+	}
+	.btn-group .btn {
+		margin: 0;
+	}
+}
